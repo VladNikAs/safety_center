@@ -1,0 +1,17 @@
+* {
+    margin: 0%;
+}
+:root{
+    --dark-theme-header: #2f3432;
+    --lime-theme-header: #d4edcb;
+    --brown-theme-header: #645042;
+    --dark-theme-body: #3e4643;
+    --lime-theme-body: #f2f2f2;
+    --brown-theme-body: #6e655e;
+    --dark-theme-footer: #2a2f2d;
+    --lime-theme-footer: #b2d4a5;
+    --brown-theme-footer: #574538;
+}
+body{
+    text-align: center;
+}
