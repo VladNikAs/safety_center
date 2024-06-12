@@ -3,32 +3,102 @@
 }
 :root{
     --dark-theme-header: #2f3432;
-    --lime-theme-header: #d4edcb;
-    --brown-theme-header: #645042;
+    --lime-theme-header: #466569;
+    --lite-theme-header: #485655;
     --dark-theme-body: #3e4643;
-    --lime-theme-body: #f2f2f2;
-    --brown-theme-body: #6e655e;
+    --lime-theme-body: #667a7c;
+    --lite-theme-body: #ffffff;
     --dark-theme-footer: #2a2f2d;
-    --lime-theme-footer: #b2d4a5;
-    --brown-theme-footer: #574538;
+    --lime-theme-footer: #35494d;
+    --lite-theme-footer: #485655;
 }
 body{
     display: flex;
+    width: 90%;
+    margin: auto;
+}
+.container{
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    background-color: var(--lite-theme-body);
 }
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 2em;
-    width: 90%;
     text-align: center;
-    color: #fff;
-    background-color: var(--dark-theme-header);
-    font-family: "Comfortaa", sans-serif;
+    color: #000000;
+    /*background-color: var(--lite-theme-header);*/
+    font-family: "Verdana", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 3em;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.5em;
+    border-bottom: 1px solid rgb(152, 152, 152);
+    /*box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.25);*/
+    z-index: 2;
+}
+.logo {
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.5em;
+}
+.tg_phone {
+    text-align: left;
+    font-size: 0.3em;
+    letter-spacing: normal;
+    color: #404342;
+}
+.tg_phone img{
+    width: 1em;
+    height: 1em;
+}
+
+.wrapper {
+    padding-top: 2em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    text-transform: uppercase;
+    color:  #141d20;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.text {
+    margin-top: 2em;
+    text-align: justify;
+    color: #404342;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+footer {
+    margin-top: 1em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:  #0b0000;
+    font-size: 2em;
+    border-top: 1px solid rgb(152, 152, 152);
+    /*background-color: var(--lite-theme-footer);
+    /*box-shadow: 0px -14px 14px rgba(0, 0, 0, 0.25);*/
 }
