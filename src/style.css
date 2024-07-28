@@ -1,7 +1,8 @@
 * {
     margin: 0%;
 }
-:root{
+
+:root {
     --dark-theme-header: #2f3432;
     --lime-theme-header: #466569;
     --lite-theme-header: #485655;
@@ -12,47 +13,62 @@
     --lime-theme-footer: #35494d;
     --lite-theme-footer: #485655;
 }
-body{
+
+body {
     display: flex;
     width: 90%;
     margin: auto;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: var(--lite-theme-body);
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 2em;
-    text-align: center;
     color: #000000;
     /*background-color: var(--lite-theme-header);*/
-    font-family: "Verdana", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 3em;
-    letter-spacing: 0.5em;
     border-bottom: 1px solid rgb(152, 152, 152);
     /*box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.25);*/
     z-index: 2;
 }
+ header div{
+    display: flex;
+    flex-direction: row;
+ }
 .logo {
-    width: 2.5em;
-    height: 2.5em;
-    margin-top: 0.5em;
+    width: fit-content;
+    height: 3rem;
+}
+.text_logo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    vertical-align: baseline;
 }
 .tg_phone {
+    flex-direction: column;
     text-align: left;
     font-size: 0.3em;
     letter-spacing: normal;
     color: #404342;
 }
-.tg_phone img{
+
+.tg_phone img {
     width: 1em;
     height: 1em;
 }
@@ -71,12 +87,12 @@ header{
     height: auto;
     flex-direction: column;
     text-transform: uppercase;
-    color:  #141d20;
+    color: #141d20;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.card img{
+.card img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -89,6 +105,7 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
 }
+
 footer {
     margin-top: 1em;
     height: 3em;
@@ -96,9 +113,51 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color:  #0b0000;
+    color: #0b0000;
     font-size: 2em;
     border-top: 1px solid rgb(152, 152, 152);
     /*background-color: var(--lite-theme-footer);
     /*box-shadow: 0px -14px 14px rgba(0, 0, 0, 0.25);*/
+}
+
+@media(max-width: 1375px) {
+    header {
+        font-size: 2em;
+    }
+
+    h2,
+    .text,
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 950px) {
+    body {
+        width: 100%;
+    }
+
+    .text,
+    footer {
+        padding: 1em;
+    }
+
+    header {
+        font-size: 1.3em;
+    }
+}
+
+@media(max-width: 760px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    header {
+        font-size: 1em;
+    }
+
+    .card {
+        width: 50%;
+        margin-bottom: 1em;
+    }
 }
