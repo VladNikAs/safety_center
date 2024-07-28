@@ -3,15 +3,10 @@
 }
 
 :root {
-    --dark-theme-header: #2f3432;
-    --lime-theme-header: #466569;
-    --lite-theme-header: #485655;
-    --dark-theme-body: #3e4643;
-    --lime-theme-body: #667a7c;
-    --lite-theme-body: #ffffff;
-    --dark-theme-footer: #2a2f2d;
-    --lime-theme-footer: #35494d;
-    --lite-theme-footer: #485655;
+    --dark-grey: #1d1d1b;
+    --base-grey: #393f45;
+    --lite-blue: #0092ca;
+    --base-white: #eee;
 }
 
 body {
@@ -28,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--lite-theme-body);
+    background-color: var(--base-white);
 }
 
 header {
@@ -36,10 +31,10 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 2em;
-    color: #000000;
+    color: var(--dark-grey);
     /*background-color: var(--lite-theme-header);*/
     font-size: 3em;
-    border-bottom: 1px solid rgb(152, 152, 152);
+    border-bottom: 1px solid var(--base-grey);
     /*box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.25);*/
     z-index: 2;
 }
@@ -65,7 +60,7 @@ header {
     text-align: left;
     font-size: 0.3em;
     letter-spacing: normal;
-    color: #404342;
+    color: var(--dark-grey);
 }
 
 .tg_phone img {
@@ -95,13 +90,12 @@ header {
 .card img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
 }
 
 .text {
     margin-top: 2em;
     text-align: justify;
-    color: #404342;
+    color: var(--dark-grey);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
 }
@@ -113,9 +107,9 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: #0b0000;
+    color: var(--dark-grey);
     font-size: 2em;
-    border-top: 1px solid rgb(152, 152, 152);
+    border-top: 1px solid var(--base-grey);
     /*background-color: var(--lite-theme-footer);
     /*box-shadow: 0px -14px 14px rgba(0, 0, 0, 0.25);*/
 }
